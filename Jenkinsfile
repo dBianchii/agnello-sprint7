@@ -15,10 +15,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Simulando deploy para a pasta de publicação...'
-                sh 'mkdir -p /vinheria/catalogo'
-                sh 'mkdir -p /vinheria/pedidos'
-                sh 'cp catalogo/index.js /vinheria/catalogo/index.js'
-                sh 'cp pedidos/index.js /vinheria/pedidos/index.js'
+                sh 'mkdir -p vinheria/catalogo'
+                sh 'mkdir -p vinheria/pedidos'
+                sh 'cp catalogo/index.js vinheria/catalogo/index.js'
+                sh 'cp pedidos/index.js vinheria/pedidos/index.js'
             }
         }
     }
